@@ -30,16 +30,16 @@ const GrayedText = styled.p`
 `
 
 
-const IssueCard = props => {
+const IssueCard = ({title, description, username, assignee}) => {
 
 
     return(
         <StyledCard>
             <FlexCardContent>
-                <Title>Title of the issue</Title>
-                <Description>Chambray mustache wayfarers copper mug retro, fingerstache magna aesthetic thundercats leggings hell of craft beer. Venmo messenger bag sartorial, aesthetic quinoa edison bulb try-hard fashion axe art party.</Description>
-                <GrayedText>Submitted by: User Login</GrayedText>
-                <GrayedText>Assigned to: Assignee Login</GrayedText>
+                <Title>{title}</Title>
+                <Description>{description}</Description>
+                <GrayedText>Submitted by: {username}</GrayedText>
+                <GrayedText>Assigned to: {assignee}</GrayedText>
             </FlexCardContent>
         </StyledCard>
     )
