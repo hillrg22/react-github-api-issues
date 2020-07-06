@@ -30,14 +30,14 @@ const GrayedText = styled.p`
 `
 
 
-const IssueCard = ({title, description, username, assignee}) => {
+const IssueCard = ({title, body, username, assignee}) => {
 
 
     return(
         <StyledCard>
             <FlexCardContent>
                 <Title>{title}</Title>
-                <Description>{description}</Description>
+                <Description>{body}</Description>
                 <GrayedText>Submitted by: {username}</GrayedText>
                 <GrayedText>Assigned to: {assignee}</GrayedText>
             </FlexCardContent>
