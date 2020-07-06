@@ -17,7 +17,6 @@ const Pagination1 = styled(Pagination)`
     margin-bottom: 15px;
 `
 
-
 const CardList = props => {
     const [page, setPage] = useState(1)
     const [issues, setIssues] = useState([])
@@ -61,7 +60,6 @@ const CardList = props => {
 
     return(
         <div>
-            <Typography>Page: {page}</Typography>
             <Pagination1 count={10} page={page} onChange={handleChange} />
             {issueCardsFilter ? issueCardsMap: <p>Sorry, no more results</p>}
             <Pagination1 count={10} page={page} onChange={handleChange} />

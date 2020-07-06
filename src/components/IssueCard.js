@@ -7,6 +7,7 @@ const StyledCard = styled(Card)`
     width: 80%;
     margin-top: 10px;
     margin-left: 10%;
+    padding: 15px;
 
 `
 
